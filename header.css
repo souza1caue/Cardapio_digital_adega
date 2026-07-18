@@ -144,9 +144,9 @@
   z-index: 20;
   height: 70px;
   border-bottom: 1px solid #332c25;
-  background: rgba(14,13,11,.96);
+  background: #0e0d0b;
   box-shadow: 0 8px 24px rgba(0,0,0,.35);
-  backdrop-filter: blur(14px);
+  backdrop-filter: none;
 }
 
 body { padding-top: 70px; }
