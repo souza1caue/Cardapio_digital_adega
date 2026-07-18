@@ -136,3 +136,47 @@
   .hero h1 { margin-top: 15px; font-size: clamp(44px, 13vw, 66px); }
   .hero__campo::after { font-size: 210px; }
 }
+
+/* Cabeçalho compacto com a marca digital, sem moldura fotográfica */
+.hero { min-height: 520px; }
+.hero__grade {
+  grid-template-columns: minmax(250px, 390px) minmax(380px, 1fr);
+  min-height: 520px;
+  gap: clamp(30px, 5vw, 70px);
+  padding: 30px 0;
+}
+.hero__marca {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+.hero__marca::after, .hero__rotulo { display: none; }
+.hero__marca img {
+  filter: drop-shadow(0 18px 25px rgba(0,0,0,.55));
+}
+.hero h1 { font-size: clamp(48px, 6vw, 76px); }
+
+@media (max-width: 760px) {
+  .hero { min-height: auto; }
+  .hero__grade {
+    grid-template-columns: 132px minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    width: min(100% - 28px, 520px);
+    min-height: 400px;
+    height: 400px;
+    padding: 14px 0 18px;
+  }
+  .hero__marca { width: 150px; margin: 0 0 0 -12px; }
+  .hero__conteudo { padding: 0; }
+  .hero h1 {
+    margin: 10px 0 7px;
+    font-size: clamp(27px, 7.5vw, 35px);
+    line-height: .96;
+  }
+  .hero p { margin-bottom: 14px; font-size: 12px; }
+  .hero__cta { padding: 11px 13px; gap: 16px; font-size: 10px; }
+  .status { padding: 5px 8px; font-size: 8px; }
+}
