@@ -10,3 +10,10 @@ preview-*.png
 assets/logo-digital-chave.png
 assets/logo-digital.png
 QR_CODE_CARDAPIO_ADEGA.*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
