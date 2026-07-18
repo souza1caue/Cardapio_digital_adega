@@ -137,6 +137,61 @@
   .hero__campo::after { font-size: 210px; }
 }
 
+/* Identidade fixa durante a navegação */
+.barra-fixa {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  height: 70px;
+  border-bottom: 1px solid #332c25;
+  background: rgba(14,13,11,.96);
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  backdrop-filter: blur(14px);
+}
+
+body { padding-top: 70px; }
+
+.barra-fixa__conteudo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: min(100% - 28px, 1100px);
+  height: 100%;
+  margin: auto;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.barra-fixa img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,.5));
+}
+
+.barra-fixa p {
+  margin: 0;
+  padding-left: 13px;
+  border-left: 1px solid #3c332c;
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.barra-fixa strong { color: var(--orange); font-weight: inherit; }
+.categorias { top: 70px; }
+
+@media (max-width: 480px) {
+  body { padding-top: 62px; }
+  .barra-fixa { height: 62px; }
+  .barra-fixa img { width: 54px; height: 54px; }
+  .barra-fixa p { font-size: 15px; }
+  .categorias { top: 62px; }
+}
+
 /* Cabeçalho compacto com a marca digital, sem moldura fotográfica */
 .hero { min-height: 520px; }
 .hero__grade {
