@@ -1,0 +1,9 @@
+# Arquivos-fonte e cópias locais que não precisam ser publicados
+Cardapio_fisico/
+cloudflare-upload/
+*.HEIC
+
+# Recurso antigo e arquivos temporários de validação
+assets/marca-adega.webp
+.edge-*/
+preview-*.png
